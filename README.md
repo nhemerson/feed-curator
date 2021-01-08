@@ -1,1 +1,1 @@
-# simple-auto-ml
+# feed-curator
