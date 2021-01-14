@@ -8,21 +8,21 @@ request.onload = function() {
 	console.log(parsedData);
 	
 
-	for(item in parsedData) {
+	//for(item in parsedData) {
 		
 		//Display all the product names
-		var url = parsedData[item].url;
+		var url = parsedData[0].url;
 		var articles = document.createElement('li');
 		articles.innerHTML = url;
 		document.body.appendChild(articles);
 
 		//Display all the product images
-		var imageUrl = parsedData[item].img_src;
+		var imageUrl = parsedData[0].img_src;
 		var images = document.createElement('img');
 		images.setAttribute('src', imageUrl);
 		document.body.appendChild(images);
 
-	}
+	//}
 
 	
 };
