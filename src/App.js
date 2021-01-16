@@ -39,9 +39,14 @@ function App() {
           </Container>
         </Jumbotron>
         </div>
-        <div class="container">
+        <div class="container-fluid" >
           <div class="row" >
           
+          <div class="col-lg mb-5">
+              <Card bg="dark" text="light"><div class="card-header" ><h5>Industry</h5></div></Card>
+              <Stream/>
+            </div>
+
             <div class="col-lg mb-5">
               <Card bg="dark" text="light"><div class="card-header" ><h5>Analyze</h5></div></Card>
               <Stream/>
