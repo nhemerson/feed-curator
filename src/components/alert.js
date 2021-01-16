@@ -22,7 +22,7 @@ class ShowAlert extends Component {
                     <Modal.Header closeButton>Success!</Modal.Header>
                     <Modal.Body>This media has been added to your playlist.</Modal.Body>
                     <Modal.Footer>
-                        <Button size="sm" variant="primary" onHide={() => {this.handleModal()}}>Close</Button>
+                        <Button size="sm" variant="primary" onClick={() => {this.handleModal()}}>Close</Button>
                     </Modal.Footer>
                 </Modal>
             </>
