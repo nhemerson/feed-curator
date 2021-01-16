@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import json 
 
+
 # import csv log into data frame
 data = pd.read_csv('~/Documents/GitHub/feed-curator/data/data_model_MVP.csv')
 print(data)
