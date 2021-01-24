@@ -17,7 +17,7 @@ class ShowAlert extends Component {
     render() {
         return(
             <>
-                <Button size="sm" variant="success" onClick={() => {this.handleModal()}}>Add</Button>
+                <Button size="sm" variant="secondary" onClick={() => {this.handleModal()}}>Add</Button>
                 <Modal show={this.state.show} onHide={() => this.handleModal()}>
                     <Modal.Header closeButton>Success!</Modal.Header>
                     <Modal.Body>This media has been added to your playlist.</Modal.Body>

@@ -19,7 +19,7 @@ class Stream extends Component {
   
     render() {
       return (
-        <Articles articles={this.state.articles} />
+        <Articles articles={this.state.articles.slice(0,5)} />
       )
     };
   
