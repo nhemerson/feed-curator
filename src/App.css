@@ -15,3 +15,14 @@ body {
 }
 
 
+.pro-sidebar {
+  color: #adadad;
+  height: 100%;
+  width: 200px;
+  min-width: 200px;
+  text-align: left;
+  transition: width, left, right, 0.3s;
+  position: relative;
+  z-index: 1009; }
+
+

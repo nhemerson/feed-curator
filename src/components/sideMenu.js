@@ -59,7 +59,7 @@ class SideMenu extends Component {
               <MenuItem>Industry Playlist</MenuItem>
               <MenuItem>Analyze Playlist</MenuItem>
               <MenuItem>Visualize Playlist</MenuItem>
-              <MenuItem>Modelling Playlist</MenuItem>
+              <MenuItem>Model Playlist</MenuItem>
               <MenuItem>Deploy Playlist</MenuItem>
             </SubMenu>
             
