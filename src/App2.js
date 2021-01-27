@@ -1,6 +1,5 @@
 import React from 'react';
 import SideMenu from './components/sideMenu'
-import Stream from "./components/streamRender.js";
 import IndustryStream from "./components/streamRenderIndustry.js";
 import AnalyzeStream from "./components/streamRenderAnalyze.js";
 import VisualizeStream from "./components/streamRenderVisualize.js";
