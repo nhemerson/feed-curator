@@ -1,33 +1,23 @@
 import React, { useState } from "react";
-import {ButtonGroup, ToggleButton} from 'react-bootstrap';
+import {ButtonGroup, Button} from 'react-bootstrap';
 
 function ToggleButtonExample() {
     
     const [radioValue, setRadioValue] = useState('1');
   
     const radios = [
-      { name: 'Domain', value: '1' },
-      { name: 'Media', value: '2' },
-      { name: 'Level', value: '3' }
+      { name: 'Domain', value: '1', to: '/domain' },
+      { name: 'Media', value: '2', to: '/media' },
+      { name: 'Level', value: '3', to: '/level' }
     ];
   
     return (
       <div className='p-3'>
         
-        <ButtonGroup toggle>
-          {radios.map((radio, idx) => (
-            <ToggleButton
-              key={idx}
-              type="radio"
-              variant="secondary"
-              name="radio"
-              value={radio.value}
-              checked={radioValue === radio.value}
-              onChange={(e) => setRadioValue(e.currentTarget.value)}
-            >
-              {radio.name}
-            </ToggleButton>
-          ))}
+        <ButtonGroup aria-label="Basic example" toggle='6'>
+          <Button href='/domain' variant="secondary" toggle>Domain</Button>
+          <Button href= '/media' variant="secondary">Media</Button>
+          <Button href='/level' variant="secondary">Level</Button>
         </ButtonGroup>
       </div>
     );

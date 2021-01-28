@@ -10,13 +10,14 @@ import {
 } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import { FaHome, FaSearch, FaListUl } from 'react-icons/fa';
+import { Link, Router } from 'react-router-dom';
 
 
 class SideMenu extends Component {
 
   render() {
     return (
-
+      
       <ProSidebar
         breakPoint="lg"
 
@@ -43,7 +44,7 @@ class SideMenu extends Component {
           <Menu >
             <MenuItem icon={<FaHome />}>
                 
-                Home
+                Home <Link to='/'></Link>
             </MenuItem>
 
             <MenuItem icon={<FaSearch />}> 
@@ -56,11 +57,11 @@ class SideMenu extends Component {
               title="Playlists"
               
             >
-              <MenuItem>Industry Playlist</MenuItem>
-              <MenuItem>Analyze Playlist</MenuItem>
-              <MenuItem>Visualize Playlist</MenuItem>
-              <MenuItem>Model Playlist</MenuItem>
-              <MenuItem>Deploy Playlist</MenuItem>
+              <MenuItem><Link to='/level'>Industry Playlist </Link></MenuItem>
+              <MenuItem>Analyze Playlist <Link to='/domain'></Link></MenuItem>
+              <MenuItem>Visualize Playlist <Link to='/media'></Link></MenuItem>
+              <MenuItem>Model Playlist <Link to='/level'></Link></MenuItem>
+              <MenuItem>Deploy Playlist <Link to='/level'></Link></MenuItem>
             </SubMenu>
             
 
@@ -86,6 +87,7 @@ class SideMenu extends Component {
           </div>
         </SidebarFooter>
       </ProSidebar>
+      
     );
 
   }

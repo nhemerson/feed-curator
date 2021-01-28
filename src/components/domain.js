@@ -1,28 +1,20 @@
 import React from 'react';
-import SideMenu from './components/sideMenu';
-import IndustryStream from "./components/streamRenderIndustry.js";
-import AnalyzeStream from "./components/streamRenderAnalyze.js";
-import VisualizeStream from "./components/streamRenderVisualize.js";
-import ModelStream from "./components/streamRenderModel.js";
-import DeployStream from "./components/streamRenderDeploy.js";
-import './App.css'
+//import SideMenu from './components/sideMenu'
+import IndustryStream from "./streamRenderIndustry.js";
+import AnalyzeStream from "./streamRenderAnalyze.js";
+import VisualizeStream from "./streamRenderVisualize.js";
+import ModelStream from "./streamRenderModel.js";
+import DeployStream from "./streamRenderDeploy.js";
+//import './App.css'
 import { Column, Row} from 'simple-flexbox';
-import ToggleButtonExample from './components/nav'
+//import ToggleButtonExample from 'nav.js';
 
-function App2() {
+function DomainLevel() {
     return (
         <div className="App">
-            <Row> 
-              <Column ><SideMenu /></Column>
+
               
-              <Column flexGrow={1}>
-                    <div style={{backgroundColor:"#242423"}}>
-                    <Row>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons" >
-                            <ToggleButtonExample />
-                        </div>
-                    </Row>
-                    </div>
+              
                     <Row horizontal='space-around'>
                       <Column >
                         <div className="block ">
@@ -65,9 +57,9 @@ function App2() {
                     </Row>
                     
                  
-                </Column>
+            
                 
-          </Row>
+
             
             
         
@@ -76,4 +68,4 @@ function App2() {
     );
 }
 
-export default App2;
+export default DomainLevel;
