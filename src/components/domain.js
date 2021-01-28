@@ -9,7 +9,7 @@ import DeployStream from "./streamRenderDeploy.js";
 import { Column, Row} from 'simple-flexbox';
 //import ToggleButtonExample from 'nav.js';
 
-function DomainLevel() {
+function DomainDefault() {
     return (
         <div className="App">
 
@@ -68,4 +68,4 @@ function DomainLevel() {
     );
 }
 
-export default DomainLevel;
+export default DomainDefault;
