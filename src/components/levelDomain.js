@@ -3,8 +3,6 @@ import React from 'react';
 import IndustryStream from "./streamRenderIndustry.js";
 import AnalyzeStream from "./streamRenderAnalyze.js";
 import VisualizeStream from "./streamRenderVisualize.js";
-import ModelStream from "./streamRenderModel.js";
-import DeployStream from "./streamRenderDeploy.js";
 //import './App.css'
 import { Column, Row} from 'simple-flexbox';
 //import ToggleButtonExample from 'nav.js';

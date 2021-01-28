@@ -10,7 +10,7 @@ import {
 } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import { FaHome, FaSearch, FaListUl } from 'react-icons/fa';
-import { Link, Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 class SideMenu extends Component {
