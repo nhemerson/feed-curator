@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
-//import Media from 'react-bootstrap/Media';
 import ShowAlert from "./alert"
 import { Row } from 'simple-flexbox';
 import { Card, CardDeck } from 'react-bootstrap'

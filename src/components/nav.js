@@ -7,8 +7,8 @@ function ToggleButtonExample() {
     return (
       <div className='p-3'>
         
-        <ButtonGroup aria-label="Basic example" toggle='6'>
-          <Button href='/domain' variant="secondary" toggle>Domain</Button>
+        <ButtonGroup aria-label="Basic example">
+          <Button href='/domain' variant="secondary" >Domain</Button>
           <Button href= '/media' variant="secondary">Media</Button>
           <Button href='/level' variant="secondary">Level</Button>
         </ButtonGroup>

@@ -5,7 +5,6 @@ import AnalyzeStream from "./streamRenderAnalyze.js";
 
 //import './App.css'
 import { Column, Row} from 'simple-flexbox';
-//import ToggleButtonExample from 'nav.js';
 
 function DomainMedia() {
     return (

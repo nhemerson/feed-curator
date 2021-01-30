@@ -1,17 +1,10 @@
 
-
-html,
-body {
+html, body, #root, .App {
   margin: 0;
   padding: 0;
   background-color: #22333b;
-}
-
-
-.root {
-  width: 100vw;
-  height: 100vh;
-  
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 

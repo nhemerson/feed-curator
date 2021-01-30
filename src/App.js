@@ -4,12 +4,6 @@ import SideMenu from './components/sideMenu';
 import DomainMedia from './components/mediaDomain';
 import DomainLevel from './components/levelDomain';
 import DomainDefault from './components/domain'
-//import DomainDefault from './components/domain';
-//import IndustryStream from "./components/streamRenderIndustry.js";
-//import AnalyzeStream from "./components/streamRenderAnalyze.js";
-//import VisualizeStream from "./components/streamRenderVisualize.js";
-//import ModelStream from "./components/streamRenderModel.js";
-//import DeployStream from "./components/streamRenderDeploy.js";
 import './App.css'
 import { Column, Row} from 'simple-flexbox';
 import ToggleButtonExample from './components/nav'
