@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
-import Articles from './stream';
-import {Heading} from './stream';
+import Articles from './streamMedia';
+import {Heading} from './streamMedia';
 
 
-class DeployStream extends Component {
+class VideoStream extends Component {
 
     state = {
       articles: []
     };
   
     componentDidMount() {
-      fetch('https://raw.githubusercontent.com/nhemerson/feed-curator/main/data/dataDeploy_model_MVP.json')
+      fetch('https://raw.githubusercontent.com/nhemerson/feed-curator/main/data/dataVideo_model_MVP.json')
       .then(res => res.json())
       .then((data) => {
         this.setState({ articles: data })
@@ -31,4 +31,4 @@ class DeployStream extends Component {
     
   };
 
-  export default DeployStream;
+  export default VideoStream;

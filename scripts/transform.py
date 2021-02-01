@@ -45,15 +45,15 @@ dataVideo_json = dataVideo.to_json('~/Documents/GitHub/feed-curator/data/dataVid
 ### Level JSON Objects
 
 dataBeginner = data[data['level'] == 'Beginner']
-dataBeginner = dataBeginner.sort_values(by=['levelNum'])
+dataBeginner = dataBeginner.sort_values(by=['domainNum'])
 dataBeginnere_json = dataBeginner.to_json('~/Documents/GitHub/feed-curator/data/dataBeginner_model_MVP.json', orient='records')
 
 dataIntermediate = data[data['level'] == 'Intermediate']
-dataIntermediate = dataIntermediate.sort_values(by=['levelNum'])
+dataIntermediate = dataIntermediate.sort_values(by=['domainNum'])
 dataIntermediate_json = dataIntermediate.to_json('~/Documents/GitHub/feed-curator/data/dataIntermediate_model_MVP.json', orient='records')
 
 dataAdvanced = data[data['level'] == 'Advanced']
-dataAdvanced = dataAdvanced.sort_values(by=['levelNum'])
+dataAdvanced = dataAdvanced.sort_values(by=['domainNum'])
 dataAdvanced_json = dataAdvanced.to_json('~/Documents/GitHub/feed-curator/data/dataAdvanced_model_MVP.json', orient='records')
 
 

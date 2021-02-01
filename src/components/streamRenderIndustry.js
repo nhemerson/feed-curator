@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import Articles from './stream';
+import {Heading} from './stream';
 
 
 class IndustryStream extends Component {
@@ -19,7 +21,10 @@ class IndustryStream extends Component {
   
     render() {
       return (
-        <Articles articles={this.state.articles.slice(0,5)} />
+        <div>
+        <Heading articles={this.state.articles.slice(0,1)} />
+        <Articles articles={this.state.articles} />
+        </div>
       )
     };
   

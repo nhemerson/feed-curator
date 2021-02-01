@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
+import Articles from './streamLevel';
+import {Heading} from  './streamLevel';
 
-import Articles from './stream';
-import {Heading} from './stream';
 
-
-class DeployStream extends Component {
+class BeginnerStream extends Component {
 
     state = {
       articles: []
     };
   
     componentDidMount() {
-      fetch('https://raw.githubusercontent.com/nhemerson/feed-curator/main/data/dataDeploy_model_MVP.json')
+      fetch('https://raw.githubusercontent.com/nhemerson/feed-curator/main/data/dataBeginner_model_MVP.json')
       .then(res => res.json())
       .then((data) => {
         this.setState({ articles: data })
@@ -25,10 +24,11 @@ class DeployStream extends Component {
         <Heading articles={this.state.articles.slice(0,1)} />
         <Articles articles={this.state.articles} />
         </div>
+        
       )
     };
   
     
   };
 
-  export default DeployStream;
+  export default BeginnerStream;

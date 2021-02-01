@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Button from 'react-bootstrap/Button';
-import { Card, CardDeck } from 'react-bootstrap'
+import { Card, CardDeck } from 'react-bootstrap';
 
 import ShowAlert from "./alert";
 
@@ -13,7 +13,7 @@ import { Row } from 'simple-flexbox';
         <div className='p-2'>
           
           {articles.map((articles) => (
-              <h5 class='text-light'>{articles.domain}</h5>
+              <h5 class='text-light'>{articles.media}</h5>
           ))}
           
         </div>
@@ -35,10 +35,10 @@ import { Row } from 'simple-flexbox';
                     <h5><small class="text-info">{articles.media} - {articles.level}</small></h5>
                   </div> </Card.Header>
                 
-                <Card.Body >
+                <Card.Body>
                  
                   <Card.Text>
-                      <p class='text-light'>{articles.headline}</p>
+                    <p class='text-light'>{articles.headline}</p>
                   </Card.Text>
                   
                 </Card.Body>
@@ -54,14 +54,17 @@ import { Row } from 'simple-flexbox';
               </Card>
 
 
-           
-            </div>
+           </div>
+
           ))}
           </CardDeck>
           </Row>
         </div>
       )
     };
+
+
+    
 
     export default Articles;
     export {

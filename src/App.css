@@ -2,11 +2,15 @@
 html, body, #root, .App {
   margin: 0;
   padding: 0;
-  background-color: #22333b;
+  background-color: #1e1e1e;
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
 
+.bg-style {
+  background-color: #272c31;
+  padding: 10px;
+}
 
 .pro-sidebar {
   color: #adadad;
@@ -15,7 +19,16 @@ html, body, #root, .App {
   min-width: 200px;
   text-align: left;
   transition: width, left, right, 0.3s;
-  position: relative;
-  z-index: 1009; }
+  position: fixed;
+  z-index: 1009; 
+  margin-top: 20px;
+  }
+
+  .pro-sidebar > .pro-sidebar-inner {
+    background: #131313;
+    height: 100%;
+    position: relative;
+    z-index: 101; }
+
 
 

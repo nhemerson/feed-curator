@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
+
 import {
   ProSidebar,
   Menu,
   MenuItem,
   SubMenu,
-  SidebarHeader,
   SidebarFooter,
   SidebarContent,
 } from 'react-pro-sidebar';
+
 import 'react-pro-sidebar/dist/css/styles.css';
+
 import { FaHome, FaSearch, FaListUl } from 'react-icons/fa';
+
 import { Link } from 'react-router-dom';
 
 
@@ -20,26 +23,9 @@ class SideMenu extends Component {
       
       <ProSidebar
         breakPoint="lg"
-
         toggled="true"
-      >
-        <SidebarHeader>
-          <div
-            style={{
-              padding: '10px',
-              
-              fontWeight: 'bold',
-              fontSize: 14,
-              letterSpacing: '1px',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
-              whiteSpace: 'nowrap',
-            }}
-          >
-            <h3>Relu.io</h3>
-          </div>
-        </SidebarHeader>
-  
+        >
+
         <SidebarContent>
           <Menu >
             <MenuItem icon={<FaHome />}>
