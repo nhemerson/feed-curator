@@ -57,3 +57,8 @@ dataAdvanced = dataAdvanced.sort_values(by=['domainNum'])
 dataAdvanced_json = dataAdvanced.to_json('~/Documents/GitHub/feed-curator/data/dataAdvanced_model_MVP.json', orient='records')
 
 
+### Lookup up JSON Opbjects
+lookupDomain = data.groupby('domain').size()
+
+
+

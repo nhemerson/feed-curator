@@ -12,7 +12,7 @@ function ToggleNav() {
   
     return (
       <div className='p-3'>
-        <Navbar fixed = 'top' expand="sm"  variant="dark" className = 'bg-style'>
+        <Navbar fixed = 'top' variant='dark' expand="sm" className = 'nav-color'>
           <Navbar.Brand>
             <img src={tempLogo} alt='none' width={35}></img>{' '}
             Relu.io
