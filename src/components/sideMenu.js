@@ -43,11 +43,9 @@ class SideMenu extends Component {
               title="Tracks"
               
             >
-              <MenuItem><Link to='/level'>Industry Track </Link></MenuItem>
-              <MenuItem>Analyze Track <Link to='/domain'></Link></MenuItem>
-              <MenuItem>Visualize Track <Link to='/media'></Link></MenuItem>
-              <MenuItem>Model Track <Link to='/level'></Link></MenuItem>
-              <MenuItem>Deploy Track <Link to='/level'></Link></MenuItem>
+              <MenuItem><Link to='/level'>Your Track #1</Link></MenuItem>
+              <MenuItem>Your Track #2<Link to='/domain'></Link></MenuItem>
+              <MenuItem>You Track #3<Link to='/media'></Link></MenuItem>
             </SubMenu>
             
 

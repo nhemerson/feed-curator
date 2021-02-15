@@ -1,11 +1,11 @@
 import React from 'react';
-//import SideMenu from './components/sideMenu'
+
 import BeginnerStream from "./streamRenderBeginner.js";
 import IntermediateStream from "./streamRenderIntermediate.js";
 import AdvancedStream from "./streamRenderAdvanced.js";
-//import './App.css'
+
 import { Column, Row} from 'simple-flexbox';
-//import ToggleButtonExample from 'nav.js';
+
 
 function DomainLevel() {
     return (

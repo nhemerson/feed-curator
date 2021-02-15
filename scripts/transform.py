@@ -4,14 +4,32 @@ import json
 
 # import csv log into data frame
 data = pd.read_csv('~/Documents/GitHub/feed-curator/data/data_model_MVP.csv')
+data = data.dropna()
+data = data.drop_duplicates()
 data_json = data.to_json('~/Documents/GitHub/feed-curator/data/data_model_MVP.json', orient='records')
+
 print(data)
+
+
+# create conditions lists for media
+conditions = [
+  (data['level'] == 'Beginner'),
+  (data['level'] == 'Intermediate'),
+  (data['level'] == 'Advanced')
+]
+
+# create a list of the values we want to assign for each condition
+values = [1,2,3]
+
+# create a new column and use np.select to assign values to it using our lists as arguments
+data['levelNum'] = np.select(conditions, values)
+data['id'] = np.arange(data.shape[0])
+
+### Domain JSON Objects
 
 dataIndustry = data[data['domain'] == 'Industry']
 dataIndustry = dataIndustry.sort_values(by=['levelNum'])
 dataIndustry_json = dataIndustry.to_json('~/Documents/GitHub/feed-curator/data/dataIndustry_model_MVP.json', orient='records')
-
-### Domain JSON Objects
 
 dataAnalyze = data[data['domain'] == 'Analyze']
 dataAnalyze = dataAnalyze.sort_values(by=['levelNum'])
@@ -25,40 +43,6 @@ dataModel = data[data['domain'] == 'Model']
 dataModel = dataModel.sort_values(by=['levelNum'])
 dataModel = dataModel.to_json('~/Documents/GitHub/feed-curator/data/dataModel_model_MVP.json', orient='records')
 
-
 dataDeploy = data[data['domain'] == 'Deploy']
 dataDeploy = dataDeploy.sort_values(by=['levelNum'])
 dataDeploy = dataDeploy.to_json('~/Documents/GitHub/feed-curator/data/dataDeploy_model_MVP.json', orient='records')
-
-
-### Media JSON Objects
-
-dataArticle = data[data['media'] == 'Article']
-dataArticle = dataArticle.sort_values(by=['levelNum'])
-dataArticle_json = dataArticle.to_json('~/Documents/GitHub/feed-curator/data/dataArticle_model_MVP.json', orient='records')
-
-dataVideo = data[data['media'] == 'Video']
-dataVideo = dataVideo.sort_values(by=['levelNum'])
-dataVideo_json = dataVideo.to_json('~/Documents/GitHub/feed-curator/data/dataVideo_model_MVP.json', orient='records')
-
-
-### Level JSON Objects
-
-dataBeginner = data[data['level'] == 'Beginner']
-dataBeginner = dataBeginner.sort_values(by=['domainNum'])
-dataBeginnere_json = dataBeginner.to_json('~/Documents/GitHub/feed-curator/data/dataBeginner_model_MVP.json', orient='records')
-
-dataIntermediate = data[data['level'] == 'Intermediate']
-dataIntermediate = dataIntermediate.sort_values(by=['domainNum'])
-dataIntermediate_json = dataIntermediate.to_json('~/Documents/GitHub/feed-curator/data/dataIntermediate_model_MVP.json', orient='records')
-
-dataAdvanced = data[data['level'] == 'Advanced']
-dataAdvanced = dataAdvanced.sort_values(by=['domainNum'])
-dataAdvanced_json = dataAdvanced.to_json('~/Documents/GitHub/feed-curator/data/dataAdvanced_model_MVP.json', orient='records')
-
-
-### Lookup up JSON Opbjects
-lookupDomain = data.groupby('domain').size()
-
-
-
